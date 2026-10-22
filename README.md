@@ -122,7 +122,7 @@ Invoke-RestMethod http://localhost:5000/health
 
 ## Deploy to Render
 
-The included `render.yaml` configures a Python web service with Gunicorn, a generated secret key, and a health check. To deploy:
+The included `render.yaml` configures a free Python web service with Gunicorn, a generated secret key, and a health check. To deploy:
 
 1. Create a GitHub repository and add the contents of this project folder to it.
 2. Create a Render account, choose **New > Blueprint**, and connect that GitHub repository.
