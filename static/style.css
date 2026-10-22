@@ -1,0 +1,307 @@
+:root {
+    color-scheme: light;
+    font-family: Inter, "Segoe UI", Arial, sans-serif;
+    color: #17233c;
+    background: #f4f7fc;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 320px;
+    min-height: 100vh;
+    margin: 0;
+    background:
+        radial-gradient(ellipse at 50% -10%, #e4edff 0, transparent 48%),
+        #f4f7fc;
+}
+
+.page-shell {
+    width: min(920px, calc(100% - 40px));
+    margin: 0 auto;
+    padding: 58px 0 28px;
+}
+
+.page-header {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.eyebrow {
+    margin: 0 0 9px;
+    color: #6279aa;
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 0.15em;
+}
+
+h1 {
+    margin: 0;
+    color: #14213d;
+    font-size: clamp(2rem, 5vw, 2.8rem);
+    letter-spacing: -0.045em;
+}
+
+.subtitle {
+    margin: 12px 0 0;
+    color: #75819a;
+    font-size: 1rem;
+}
+
+.card {
+    margin: 0 0 22px;
+    padding: 27px 30px;
+    border: 1px solid #e6ebf4;
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0 12px 35px rgb(35 55 90 / 5%);
+}
+
+.section-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 21px;
+}
+
+.section-heading .eyebrow {
+    margin-bottom: 5px;
+}
+
+h2 {
+    margin: 0;
+    color: #1b2944;
+    font-size: 1.3rem;
+    letter-spacing: -0.025em;
+}
+
+.student-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    align-items: end;
+    gap: 12px;
+}
+
+.student-form label {
+    grid-row: 1;
+    color: #495672;
+    font-size: 0.84rem;
+    font-weight: 650;
+}
+
+.student-form input {
+    width: 100%;
+    min-width: 0;
+    height: 44px;
+    margin-top: -4px;
+    padding: 0 12px;
+    border: 1px solid #dce3ef;
+    border-radius: 8px;
+    outline: none;
+    color: #17233c;
+    font: inherit;
+    font-size: 0.9rem;
+}
+
+.student-form input::placeholder {
+    color: #a1aabc;
+}
+
+.student-form input:focus {
+    border-color: #597be1;
+    box-shadow: 0 0 0 3px rgb(89 123 225 / 14%);
+}
+
+button {
+    font: inherit;
+    cursor: pointer;
+}
+
+.primary-button {
+    height: 44px;
+    padding: 0 19px;
+    border: 0;
+    border-radius: 8px;
+    background: #4268d5;
+    color: #fff;
+    font-size: 0.88rem;
+    font-weight: 700;
+    transition: background 0.15s ease, transform 0.15s ease;
+}
+
+.primary-button:hover {
+    transform: translateY(-1px);
+    background: #3157c2;
+}
+
+.messages {
+    margin: -5px 0 18px;
+}
+
+.message {
+    margin: 0;
+    padding: 10px 12px;
+    border-radius: 7px;
+    font-size: 0.88rem;
+}
+
+.message.error {
+    background: #fff0ef;
+    color: #a8332e;
+}
+
+.message.success {
+    background: #eaf8f0;
+    color: #257247;
+}
+
+.records-card {
+    min-height: 245px;
+}
+
+.records-heading {
+    margin-bottom: 17px;
+}
+
+.record-count {
+    padding: 6px 10px;
+    border-radius: 20px;
+    background: #eff3ff;
+    color: #526db8;
+    font-size: 0.77rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+th {
+    padding: 12px 14px;
+    border-bottom: 1px solid #e9edf4;
+    color: #8791a6;
+    font-size: 0.7rem;
+    font-weight: 750;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+td {
+    padding: 13px 14px;
+    border-bottom: 1px solid #f0f2f7;
+    color: #59657e;
+    font-size: 0.88rem;
+}
+
+tbody tr:last-child td {
+    border-bottom: 0;
+}
+
+.student-name {
+    color: #263550;
+    font-weight: 650;
+}
+
+.delete-button {
+    padding: 7px 11px;
+    border: 1px solid #f3d7d5;
+    border-radius: 7px;
+    background: #fff;
+    color: #bb4a43;
+    font-size: 0.78rem;
+    font-weight: 650;
+}
+
+.delete-button:hover {
+    background: #fff2f1;
+}
+
+.empty-state {
+    display: flex;
+    min-height: 145px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #7e899f;
+    text-align: center;
+}
+
+.empty-icon {
+    display: grid;
+    width: 34px;
+    height: 34px;
+    margin-bottom: 10px;
+    place-items: center;
+    border-radius: 50%;
+    background: #f0f4ff;
+    color: #5575d1;
+    font-size: 1.3rem;
+}
+
+.empty-state p {
+    margin: 0 0 5px;
+    color: #45536f;
+    font-size: 0.9rem;
+    font-weight: 650;
+}
+
+.empty-state span:last-child {
+    font-size: 0.8rem;
+}
+
+footer {
+    padding: 10px;
+    color: #919bad;
+    font-size: 0.76rem;
+    text-align: center;
+}
+
+footer span {
+    padding: 0 5px;
+}
+
+@media (max-width: 680px) {
+    .page-shell {
+        width: min(100% - 28px, 520px);
+        padding-top: 38px;
+    }
+
+    .card {
+        padding: 22px 18px;
+    }
+
+    .student-form {
+        grid-template-columns: 1fr;
+        gap: 9px;
+    }
+
+    .student-form label {
+        grid-row: auto;
+        margin-top: 5px;
+    }
+
+    .student-form input {
+        margin-top: 0;
+    }
+
+    .primary-button {
+        margin-top: 6px;
+    }
+
+    th,
+    td {
+        padding: 11px 9px;
+    }
+}
